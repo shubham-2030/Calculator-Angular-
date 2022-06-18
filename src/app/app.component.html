@@ -1,0 +1,48 @@
+<div class="calc-body">
+  <div class="calculator">
+      <div class="screen">
+          <input [(ngModel)]="screen" type="text" placeholder="0" disabled>
+      </div>
+
+      <div class="buttons">
+          <table>
+              <tr>
+                  <td><button style="background-color: rgb(255, 128, 0);" (click)="clearScreen()">AC</button></td>
+                  <td><button style="background-color: rgb(218, 45, 218);" (click)="delChar()">DEL</button></td>
+                  <td><button (click)="inputButton('(')">(</button></td>
+                  <td><button (click)="inputButton(')')">)</button></td>
+              </tr>
+
+              <tr>
+                  <td><button (click)="inputButton('7')">7</button></td>
+                  <td><button (click)="inputButton('8')">8</button></td>
+                  <td><button (click)="inputButton('9')">9</button></td>
+                  <td><button (click)="inputButton('/')">/</button></td>
+              </tr>
+              
+              <tr>
+                  <td><button (click)="inputButton('4')">4</button></td>
+                  <td><button (click)="inputButton('5')">5</button></td>
+                  <td><button (click)="inputButton('6')">6</button></td>
+                  <td><button (click)="inputButton('*')">X</button></td>
+              </tr>
+
+              <tr>
+                  <td><button (click)="inputButton('1')">1</button></td>
+                  <td><button (click)="inputButton('2')">2</button></td>
+                  <td><button (click)="inputButton('3')">3</button></td>
+                  <td><button (click)="inputButton('-')">-</button></td>
+              </tr>
+
+              <tr>
+                  <td><button (click)="inputButton('0')">0</button></td>
+                  <td><button (click)="inputButton('.')">.</button></td>
+                  <td><button style="background-color: rgb(45, 171, 17);" (click)="result()">=</button></td>
+                  <td><button (click)="inputButton('+')">+</button></td>
+              </tr>
+          
+           </table>
+          
+      </div>
+  </div>
+</div>
